@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/******BASEHEADER STYLES*****/
+/******----BASE STYLES-----*****/
 
 header,
 footer {
@@ -106,35 +106,58 @@ footer {
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
-
 }
-/**HEADER*/
+.content-wrapper{
+  width: 89%;
+}
+/***** HEADER *****/
+header {
+    padding: 15px 0;
+}
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0px;
+}
+.header-divider{
+  width: 100%;
 }
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 header nav ul {
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
+  width:60%;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
 }
 
 /****** MOBILE SYLES - HOMEPAGE *****/
 .hero-area{
   display: flex;
   justify-content: center;
-
   flex-flow: row wrap;
 }
-
+h1{
+  margin: 50px 20px;
+}
+/***** FORM *****/
+h3{
+  margin: 30px 0px 0px 0px;
+}
+input{
+  margin: 20px 0px 0px 0px;
+  width: 95%;
+}
+/***** FEATURES *****/
 aside{
   display: flex;
   justify-content: center;
@@ -145,19 +168,39 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  text-align: center;
 }
+h2{
+  margin: 50px 0px 0px 0px;
+}
+/*.features .content-wrapper{
+  margin: 50px 0px 70px 0px;
+}*/
 .features .features-items{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+.features article{
+  width:55%
+}
+.features p{
+  margin: 0px;
+}
+/***** REVIEWS *****/
 .reviews{
   display: flex;
   justify-content: center;
-
   flex-flow: row wrap;
 }
+.reviews .content-wrapper {
+  margin-bottom: 30px;
+}
+.reviews h3{
+  width: 50%;
+}
+
 .mission{
   display: flex;
   justify-content: center;
@@ -196,17 +239,31 @@ aside{
 }*/
 
 /*FOOTER*/
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0px 5px 0px;
+    text-align: center;
+}
 footer .social-icons{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+footer h3{
+  margin: 0px 0px 20px 0px;
+}
+footer p{
+  margin: 0px;
+}
+.contact, .social {
+  margin-bottom: 50px;
+}
+
 
 /*footer .copyright{
   display: flex;
