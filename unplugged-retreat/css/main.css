@@ -99,6 +99,10 @@ textarea {
    ========================================================================== */
 
 /******----BASE STYLES-----*****/
+.content-wrapper{
+  width: 89%;
+  margin: 50px 0;
+}
 
 header,
 footer {
@@ -107,8 +111,9 @@ footer {
    align-items: center;
    flex-flow: row wrap;
 }
-.content-wrapper{
-  width: 89%;
+
+a {
+  text-decoration: none;
 }
 /***** HEADER *****/
 header {
@@ -138,6 +143,7 @@ header nav ul {
   width:60%;
   margin: 20px 0px 0px 0px;
   padding: 0px;
+  list-style: none;
 }
 
 /****** MOBILE SYLES - HOMEPAGE *****/
@@ -260,6 +266,10 @@ footer h3{
 footer p{
   margin: 0px;
 }
+.copyright{
+  width: 100%;
+  text-align: center;
+}
 .contact, .social {
   margin-bottom: 50px;
 }
@@ -367,16 +377,122 @@ footer p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+.content-wrapper{
+  width: 84%;
+  margin: 100px 0px;
+}
+header{
+  justify-content: center;
+  padding: 0px;
+}
+header .content-wrapper{
+  flex-flow: row nowrap;
+  padding: 30px 60px;
+}
+header nav {
+  width: 125px;/*temporary fix*/
+}
+header nav ul {
+  justify-content: space-between;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;;
 }
+.form-description, .form {
+  width:37%;
+}
+
+.features-items{
+  display: flex;
+  flex-basis: 50%
+  padding: 30px;
+}
+.features-items article{
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 30px;
+}
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews article div {
+  width: 49%;
+}
+/*****FOOTER*****/
+footer .content-wrapper{
+  width: 65%;
+  margin: 100px 0px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/***** ABOUT PAGE *****/
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.mission-content p {
+  width: 40%;
+}
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*****  FAQ PAGE  *****/
+
+.faq .content-wrapper {
+    justify-content: space-between;
+}
+.questions {
+    flex-basis: 40%;
+}
+.faq h2 {
+    width: 100%;
+}
+/*.faq-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: auto;
+  flex-flow: row wrap;
+}
+.faq h2 {
+  width : 91%
+}
+.questions{
+  display: flex;
+  width: 41%;
+  flex-flow: row wrap;
+}*/
+
+}
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+}
+
+
+
+
+
 
 /* ==========================================================================
    Print styles.
