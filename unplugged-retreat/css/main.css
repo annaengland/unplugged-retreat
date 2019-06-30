@@ -207,6 +207,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  /*background: url('img/image.jpg') center no-repeat #333;
+  background-size: cover;*/
 }
 h1{
   margin: 50px 20px;
