@@ -116,6 +116,7 @@ textarea {
    a {
      color: #e2e3ed;
      text-decoration: none;
+     font-weight: bold;
    }
 
    h2 {
@@ -172,6 +173,7 @@ footer {
 /***** HEADER *****/
 header {
     padding: 15px 0;
+    background-color: #202322;
 }
 header .content-wrapper {
   display: flex;
@@ -194,7 +196,7 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width:60%;
+  width:75%;/* 60% of the whole */
   margin: 20px 0px 0px 0px;
   padding: 0px;
   list-style: none;
@@ -208,6 +210,9 @@ header nav ul {
 }
 h1{
   margin: 50px 20px;
+  font-weight: normal;
+  font-size: 2.4em;
+  line-height: 1.2em;
 }
 /***** FORM *****/
 h3{
@@ -223,6 +228,10 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158
+}
+aside .content-wrapper{
+  margin-top: 0px;
 }
 .features{
   display: flex;
@@ -256,6 +265,7 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2A423A;
 }
 .reviews .content-wrapper {
   margin-bottom: 30px;
@@ -267,18 +277,20 @@ aside{
   width: 50%;
   margin: 0px;
 }
-
+/***** ABOUT PAGE *****/
 .mission{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 .contact-section{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2A423A;
 }
 address p {
   margin: 0px;
@@ -286,11 +298,13 @@ address p {
 address h4{
   margin: 18px 0px;
 }
+/***** FAQ PAGE *****/
 .faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 .faq .content-wrapper{
   display: flex;
@@ -299,7 +313,10 @@ address h4{
   flex-flow: row wrap;
 }
 
-/*FOOTER*/
+/*****FOOTER*****/
+footer {
+  background-color: #202322;
+}
 footer .content-wrapper {
     width: 55%;
     margin: 50px 0px 5px 0px;
@@ -328,8 +345,33 @@ footer p{
 .contact, .social {
   margin-bottom: 50px;
 }
+/*BUTTON*/
+aside .form {
+  margin-top: 30px;
+}
 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 16px;
+    background-color: #E1E2EA;
+}
 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
