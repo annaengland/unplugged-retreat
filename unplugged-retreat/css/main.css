@@ -97,7 +97,61 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* General Styles */
+   html {
+     font-size: 16px;
+   }
 
+   body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1em;
+     color: #e2e3ed;
+   }
+
+   ul,
+   ol {
+     text-transform: uppercase;
+   }
+
+   a {
+     color: #e2e3ed;
+     text-decoration: none;
+   }
+
+   h2 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.9em;
+     font-weight: normal;
+     margin: 0px;
+   }
+
+   h3,
+   h4 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.2em;
+     font-weight: normal;
+   }
+
+   p {
+     margin: 12px 0;
+     font-size: 0.9em;
+   }
+
+   img {
+     margin: 0px 0px 40px 0px;
+   }
+
+   figure {
+
+   }
+
+   address {
+     font-style: normal;
+   }
+
+   .content-wrapper {
+
+   }
 /******----BASE STYLES-----*****/
 .content-wrapper{
   width: 89%;
@@ -112,9 +166,9 @@ footer {
    flex-flow: row wrap;
 }
 
-a {
-  text-decoration: none;
-}
+
+
+
 /***** HEADER *****/
 header {
     padding: 15px 0;
@@ -176,20 +230,23 @@ aside{
   flex-flow: row wrap;
   text-align: center;
 }
-h2{
+.features h2{
   margin: 50px 0px 0px 0px;
+  text-align: left;
 }
-/*.features .content-wrapper{
-  margin: 50px 0px 70px 0px;
-}*/
+.features .content-wrapper{
+  margin-bottom: 0px;
+}
 .features .features-items{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 35px 0px;
 }
 .features article{
-  width:55%
+  width:63%;/*should be 55% or 200px -because content-wrapper is at 89%*/
+  margin: 35px 0px;
 }
 .features p{
   margin: 0px;
@@ -203,8 +260,12 @@ h2{
 .reviews .content-wrapper {
   margin-bottom: 30px;
 }
+.reviews img{
+  margin: 30px 0px 20px 0px;
+}
 .reviews h3{
   width: 50%;
+  margin: 0px;
 }
 
 .mission{
@@ -219,6 +280,12 @@ h2{
   align-items: center;
   flex-flow: row wrap;
 }
+address p {
+  margin: 0px;
+}
+address h4{
+  margin: 18px 0px;
+}
 .faq {
   display: flex;
   justify-content: center;
@@ -231,18 +298,6 @@ h2{
   align-items: center;
   flex-flow: row wrap;
 }
-/*.reviews .content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.reviews .content-wrapper .review{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}*/
 
 /*FOOTER*/
 footer .content-wrapper {
@@ -273,15 +328,6 @@ footer p{
 .contact, .social {
   margin-bottom: 50px;
 }
-
-
-/*footer .copyright{
-  display: flex;
-  flex-flow: row wrap;
-  background: red;
-}
-*/
-
 
 
 
