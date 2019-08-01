@@ -137,22 +137,17 @@ textarea {
      margin: 12px 0;
      font-size: 0.9em;
    }
-
    img {
-     margin: 0px 0px 40px 0px;
+     margin: 0px 20px 40px 20px;
+     width: 100%;
    }
-
    figure {
-
+     margin: 0;
    }
-
    address {
      font-style: normal;
    }
 
-   .content-wrapper {
-
-   }
 /******----BASE STYLES-----*****/
 .content-wrapper{
   width: 89%;
@@ -185,6 +180,9 @@ header .content-wrapper {
 .header-divider{
   width: 100%;
 }
+header img{
+  margin: 0 0 10px 0;
+}
 header nav {
   display: flex;
   justify-content: space-around;
@@ -207,11 +205,11 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  /*background: url('img/image.jpg') center no-repeat #333;
-  background-size: cover;*/
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 h1{
-  margin: 50px 20px;
+  margin: 50px 20px 335px 20px;
   font-weight: normal;
   font-size: 2.4em;
   line-height: 1.2em;
@@ -240,9 +238,11 @@ aside .content-wrapper{
   justify-content: center;
   flex-flow: row wrap;
   text-align: center;
+  background: url('../img/rawpixel-800820-unsplash12.jpg') center no-repeat #333;
+  background-size: cover;
 }
 .features h2{
-  margin: 50px 0px 0px 0px;
+  margin: 0px;
   text-align: left;
 }
 .features .content-wrapper{
@@ -259,6 +259,10 @@ aside .content-wrapper{
   width:63%;/*should be 55% or 200px -because content-wrapper is at 89%*/
   margin: 35px 0px;
 }
+.features img{
+  width: 38%;
+  max-width: 76px;
+}
 .features p{
   margin: 0px;
 }
@@ -274,6 +278,7 @@ aside .content-wrapper{
 }
 .reviews img{
   margin: 30px 0px 20px 0px;
+  width:100%;
 }
 .reviews h3{
   width: 50%;
@@ -333,6 +338,9 @@ footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer img{
+  width: auto;
 }
 footer h3{
   margin: 0px 0px 20px 0px;
@@ -481,18 +489,26 @@ header .content-wrapper{
   flex-flow: row nowrap;
   padding: 30px 60px;
 }
-header nav {
-  width: 125px;/*temporary fix*/
+/*.header-divider{
+  display: none;
+}*/
+header figure {
+  width: 86%;
+}
+header img{
+  margin: 0px;
 }
 header nav ul {
   justify-content: space-between;
+  margin: 0px;
 }
 .hero-area{
   justify-content: flex-start;
 }
 h1{
-  margin: 0px 60px;
+  margin: 100px 60px 420px 60px;
   width: 70%;
+  font-size: 3em;
 }
 
 aside .content-wrapper {
@@ -504,7 +520,16 @@ aside .content-wrapper {
 .form-description, .form {
   width:37%;
 }
-
+aside h3 {
+  margin: 0px;
+  font-size: 1.4em;
+}
+aside .form {
+  margin:0px;
+}
+.features p {
+  margin-bottom: 25px;
+}
 .features-items{
   display: flex;
   flex-basis: 50%
@@ -516,17 +541,29 @@ aside .content-wrapper {
   flex-flow: column wrap;
   padding: 30px;
 }
+.reviews h2{
+  width: 73%;
+  font-size: 2.2em;
+}
 .reviews article {
   display: flex;
   justify-content: space-around;
 }
 .reviews article div {
-  width: 49%;
+  width: 86%;
+  margin:30px 15px;
+}
+.reviews h3{
+  width:82%;
+  font-size: 1.5em;
+}
+.reviews figure{
+  width: 90%;
 }
 /*****FOOTER*****/
 footer .content-wrapper{
   width: 65%;
-  margin: 100px 0px;
+  margin: 100px 0px 0px 0px;
 }
 .footer-content{
   display: flex;
@@ -590,32 +627,42 @@ footer .content-wrapper{
 /* Hero */
     .hero-area h1 {
         width: 60%;
-        margin: 0px 115px;
+        margin: 50px 115px 440px 115px;
+        font-size: 4em;
     }
-
+    header figure{
+      width: 75%;
+    }
     /* Aside */
     aside .content-wrapper {
-        justify-content: space-around;;
+        justify-content: space-around;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-        width:26%;
+        width:35%;
+    }
+    aside h3{
+      font-size: 2em;
+    }
+    p{
+      font-size: 1.3em;
     }
 
     /* Features */
     .features h2 {
-        width:73%;
+        width:84%;
+        font-size: 2.2em;
     }
 
     .features article {
-        flex-basis: 19%;
+        flex-basis: 23%;
     }
 
     /* Reviews */
-    .reviews article div {
+    /*.reviews article div {
         width:35%;
-    }
+    }*/
 
 /* ==========================================================================
    About Page
