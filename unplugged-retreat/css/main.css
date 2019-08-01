@@ -259,6 +259,10 @@ aside .content-wrapper{
   width:63%;/*should be 55% or 200px -because content-wrapper is at 89%*/
   margin: 35px 0px;
 }
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
 .features img{
   width: 38%;
   max-width: 76px;
